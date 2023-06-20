@@ -6,9 +6,10 @@
 </div>
 
 <ng-template #noBorro>
-    <h3>No ah borrado nada</h3>
+    <h3>No a borrado nada</h3>
 </ng-template>
 
+<!--Linea 14, desaparece el boton si no hay nada que borrar.-->
 <button 
     *ngIf="heroNames.length > 0"
     (click)="removeLastHero()"
